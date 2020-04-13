@@ -43,7 +43,7 @@
 								{
 									"name": "reportDir",
 									"type": "upload",
-									"value": "C:\\Program Files (x86)\\Jenkins\\workspace\\Unit-Tests\\JUnit\\subproject\\target\\surefire-reports",
+									"value": "C:\\Program Files (x86)\\Jenkins\\workspace\\Unit-Tests\\JUnit",
 									"required": true
 								}
 							]
