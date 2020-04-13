@@ -1,21 +1,101 @@
 {
 	"gammaAccess": {
-		"url": "http://192.168.2.38:3000",
-		"userName": "nilesh.virkar@acellere.com",
-		"password": "gamma123"
+		"url": "http://192.168.2.24:3000/",
+		"userName": "windows@embold.io",
+		"password": "admin1234"
 	},
-	"repositories": [{
+	"repositories": [
+		{
+			"dataDir": "$WORKSPACE-dataDir",
 			"repository": {
-				"uid": "835279b8743ccecb2176af6952e72766",
-				"projectName": "project_name",
+				"uid": "5876e82be6f34ed5c0ca4eaee3d80882",
+				"projectName": "mavengithubdemo-remote",
+				"languages": [
+					"JAVA"
+				],
 				"sources": {
-					"baseDir": "$WORKSPACE"
+					"baseDir": "$WORKSPACE",
+					"exclusions": []
 				}
 			},
-			"dataDir": "C:/temp",
+			"settings": {
+				"additionalOptions": [],
+				"includePaths": []
+			},
 			"modules": {
-				"codeissues": [{
-						"name": "pmd"
+				"relevance": [
+					{
+						"name": "relevance",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": []
+						}
+					}
+				],
+				"unittest": [
+					{
+						"name": "junit",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": [
+								{
+									"name": "reportDir",
+									"type": "upload",
+									"value": "C:\\Program Files (x86)\\Jenkins\\workspace\\Unit-Tests\\JUnit\\subproject\\target\\surefire-reports",
+									"required": true
+								}
+							]
+						}
+					}
+				],
+				"codeissues": [
+					{
+						"name": "pmd",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": [
+								{
+									"name": "javaVersion",
+									"type": "text",
+									"value": "1.8",
+									"required": false
+								},
+								{
+									"name": "ruleSets",
+									"type": "text",
+									"value": "rulesets/java/strictexception.xml,rulesets/java/basic.xml,rulesets/java/design.xml",
+									"required": true
+								}
+							]
+						}
+					},
+					{
+						"name": "gamma_java",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": []
+						}
+					}
+				],
+				"coverage": [
+					{
+						"name": "clover",
+						"enabled": true,
+						"config": {
+							"rules": [],
+							"options": [
+								{
+									"name": "reportDir",
+									"type": "upload",
+									"value": "C:\\Program Files (x86)\\Jenkins\\workspace\\Unit-Tests\\JUnit\\target\\site\\clover",
+									"required": true
+								}
+							]
+						}
 					}
 				]
 			}
