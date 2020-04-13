@@ -6,7 +6,7 @@
 	},
 	"repositories": [
 		{
-			"dataDir": "$WORKSPACE-dataDir",
+			"dataDir": "$WORKSPACE/unit-tests-dataDir",
 			"repository": {
 				"uid": "5876e82be6f34ed5c0ca4eaee3d80882",
 				"projectName": "mavengithubdemo-remote",
