@@ -1,14 +1,14 @@
 {
     "gammaAccess": {
-        "url": "",
-        "userName": "",
-        "password": ""
+        "url": "http://192.168.2.24:3000/",
+        "userName": "windows@embold.io",
+        "password": "admin1234"
     },
     "repositories": [
         {
             "dataDir": "%WORKSPACE%",
             "repository": {
-                "uid": "ae5b9c4ea46d1a276350a243b1b1dec4",
+                "uid": "5876e82be6f34ed5c0ca4eaee3d80882",
                 "projectName": "githubdemo_jenkins",
                 "languages": [
                     "JAVA"
